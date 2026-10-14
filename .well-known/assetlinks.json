@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.planner.app",
+    "sha256_cert_fingerprints": ["58:DA:E5:27:13:88:AB:31:0E:30:70:6B:58:B0:47:35:70:66:00:A0:F2:1B:0F:72:C5:E8:01:15:25:DD:2E:8B"]
+  }
+}]

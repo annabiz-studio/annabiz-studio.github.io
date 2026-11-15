@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scientific Calculator – Privacy Policy</title>
+<script>
+(function () {
+  var have = ["en", "he"];
+  var alias = { "iw": "he", "in": "id", "tl": "fil", "no": "nb", "nn": "nb" };
+  function pick(tag) {
+    tag = String(tag || "").toLowerCase().replace(/_/g, "-");
+    var p = tag.split("-"), base = alias[p[0]] || p[0];
+    if (base === "zh") {
+      return (/(^|-)(hant|tw|hk|mo)(-|$)/.test(tag)) ? "zh_TW" : "zh_CN";
+    }
+    return have.indexOf(base) >= 0 ? base : null;
+  }
+  var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || navigator.userLanguage];
+  var code = null;
+  for (var i = 0; i < list.length && !code; i++) code = pick(list[i]);
+  location.replace((code || "en") + ".html");
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=en.html"></noscript>
+<style>body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, "Noto Sans Hebrew", "Noto Sans Arabic", "Noto Sans Devanagari", "Nirmala UI", "Noto Sans Bengali", "Noto Sans Thai", "Leelawadee UI", "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", "Meiryo", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; margin: 24px 16px; }</style>
+</head>
+<body>
+<p><a href="en.html">Scientific Calculator – Privacy Policy (English)</a></p>
+<p><a href="en.html" lang="en">English</a> · <a href="he.html" lang="he">עברית</a></p>
+</body>
+</html>

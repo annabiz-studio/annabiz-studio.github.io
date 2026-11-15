@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Levavot – Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f4f8fc; --fg: #1d2733; --muted: #5a6878; --card: #ffffff; --accent: #2f7de1; --note: #eef5ff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #10161e; --fg: #e8eef5; --muted: #a3b1c0; --card: #19222d; --accent: #7fb2ff; --note: #1d2a3a; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  section { background: var(--card); border-radius: 16px; padding: 8px 20px 16px; margin: 16px 0; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+  h1 { font-size: 28px; margin: 8px 0 4px; }
+  h1 span { color: var(--accent); }
+  h2 { font-size: 19px; margin: 22px 0 6px; }
+  h3 { font-size: 16px; margin: 14px 0 4px; }
+  p, li { margin: 6px 0; }
+  a { color: var(--accent); }
+  code { overflow-wrap: anywhere; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .lang { font-size: 14px; }
+  .lang a { color: inherit; margin-inline-end: 12px; display: inline-block; }
+  .note { background: var(--note); border-radius: 10px; padding: 8px 12px; }
+  [dir="rtl"] { text-align: right; }
+</style>
+</head>
+<body>
+<main>
+  <h1><span>Levavot</span> – Privacy Policy</h1>
+  <p class="muted">App: Levavot (package <code>com.levavot.app</code>), version 0.6 and later · Developer: AnnaBiz · Effective date: October 8, 2026 · Last updated: October 9, 2026 · Contact: <a href="mailto:annabiz.studio@gmail.com">annabiz.studio@gmail.com</a></p>
+  <p class="lang"><a href="privacy/index.html">🌐 All languages · כל השפות</a><a href="#en">English</a><a href="#he">עברית</a><a href="#voice-en">Voice and transcription</a><a href="#export-en">Export and restore</a><a href="#delete-en">Delete your data</a><a href="#export-he">ייצוא ושחזור</a><a href="#delete-he">מחיקת מידע</a></p>
+
+  <section id="en">
+    <h2>In short</h2>
+    <ul>
+      <li><strong>Your hearts live on your phone.</strong> Your messages, photos, voice recordings, reminders and settings are saved only in the app's private storage on your device. We (the developer) do not receive them. You can also save a copy as a file wherever you choose (<a href="#export-en">Export and restore</a>); that file is yours and we never see it.</li>
+      <li><strong>This version has no server and no internet permission,</strong> so the app cannot send your hearts, photos or recordings anywhere by itself. There is no account, no ads, no analytics, no tracking, and nothing is shared with third parties.</li>
+      <li><strong>Voice hearts and your phone's speech service.</strong> The app turns your recording into text with Android's speech recognition. When your phone has an on-device recognizer, the app uses it. When it does not, Android's default speech service handles it, and on most phones that is Google's, which <strong>may process the audio on Google's servers</strong> under Google's policy. See <a href="#voice-en">Voice and transcription</a>.</li>
+      <li><strong>Android's own backup.</strong> If backup is on in your phone's settings, Android may copy the app's data (including your hearts, photos and voice recordings) to your own Google account, and move it to a new phone when you transfer. We cannot access it. See <a href="#leave-en">When information leaves your device</a>.</li>
+      <li><strong>For married couples aged 18 and over.</strong></li>
+    </ul>
+
+    <h2>Who we are</h2>
+    <p>Levavot ("Hearts") is published by AnnaBiz ("we", "us"). For anything about privacy, write to <a href="mailto:annabiz.studio@gmail.com">annabiz.studio@gmail.com</a>. Levavot currently has no ads and no purchases. If that changes, we will update this policy first.</p>
+
+    <h2>What is stored on your device only</h2>
+    <ul>
+      <li><strong>Your hearts</strong>: the text, the type of heart, stickers, color, pattern and font, the date you marked, a place name you typed (free text; the app does not use your location), when the heart was created and opened, which lists it belongs to, and the link to the heart it replies to. They are saved in a file in the app's private storage.</li>
+      <li><strong>Photos</strong>: up to 3 per heart, scaled down to at most 1280 pixels on the long side, saved in the app's private storage.</li>
+      <li><strong>Voice recordings</strong>: sound files of up to 60 seconds, saved in the app's private storage.</li>
+      <li><strong>Reminders, wedding date and settings</strong>: the reminders you create are saved with your hearts. Your wedding date (optional: only if you choose to enter it, used only for an anniversary reminder, and deleted when you turn it off), display choices, notification settings and the times of the app's own gentle suggestions are kept in the app's local settings.</li>
+      <li><strong>Weekly check-in</strong>: about once a week, after the first week of use, the app asks one question ("This week, did I feel listened to and respected?"). You answer with one tap (three faces) or skip. Your answers, with the time you gave them, are stored <strong>only on your phone</strong>, in the app's local settings. The app never sends them anywhere, and your spouse does not see them. Like your other settings, they are part of Android's backup if backup is on (see <a href="#leave-en">below</a>).</li>
+      <li><strong>"The app learns you"</strong>: the hour at which you usually send hearts is worked out on your phone, from the times of your last hearts only. The app does not read or analyze what your hearts say, and none of this is sent anywhere.</li>
+    </ul>
+    <p>All of this is deleted when you clear the app's storage or uninstall it. Hearts are never deleted automatically; only you delete them.</p>
+
+    <h2>Features and the permissions they use</h2>
+    <h3 id="voice-en">Microphone and transcription: voice hearts (RECORD_AUDIO)</h3>
+    <p>The first time you record a voice heart, the app explains why it needs the microphone and then asks for permission. It uses the microphone <strong>only while you are recording</strong> (up to 60 seconds). The recording is saved as a sound file in the app's private storage and attached to the heart. Levavot has no internet permission and does not send the recording anywhere itself.</p>
+    <p><strong>The written transcript.</strong> On Android 13 and later, while you record, the app also asks Android's speech recognition to turn your words into text, so they appear inside the heart (you can edit them). The transcript is made <strong>on the phone when the phone can do it, and otherwise by the phone's speech service</strong> (usually Google's), as described below. The short explanation the app shows before asking for the microphone says the same.</p>
+    <p><strong>Android 12 and older.</strong> Automatic transcription needs Android 13 or later (and a speech recognition service on the phone). Before you record, the app shows a note saying that this phone has no automatic transcription. The recording is still saved, and you type the text yourself.</p>
+    <ul>
+      <li>When your phone has an <strong>on-device speech recognizer</strong>, the app asks for that one, and also asks for offline recognition. The audio is then processed on the phone.</li>
+      <li>When your phone has <strong>no on-device recognizer</strong>, Android's default speech recognition service is used. On most phones that is Google's speech service. That service may then <strong>send the audio to its provider's servers to be transcribed</strong>, under the provider's own privacy policy, usually the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and not under this one. We cannot control it, and we do not receive the audio or the text from it.</li>
+      <li>Recording a voice heart is optional. If you do not want your voice processed by a speech service, write your heart instead of recording it.</li>
+    </ul>
+    <h3>Photos</h3>
+    <p>You choose photos with Android's system photo picker. Levavot receives only the photos you choose. It has no access to the rest of your photos and does not ask for photo-library or camera permission. When you delete a heart, its photos and voice recording files are deleted too.</p>
+    <h3>Notifications and reminders (POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED)</h3>
+    <p>Reminders you set, the daily encouragement, reminders for important dates and the app's own gentle suggestions to send a heart are scheduled and shown <strong>locally</strong> on your phone. They are not messages from a server. By default the app sends at most 3 of its own suggestions a week; you can change the number or turn them off. Precise timing (exact alarms) is optional; without it, reminders arrive within a few minutes of the chosen time. When Android does not allow exact alarms for the app (by default this is the case on Android 14 and later), the Reminders screen shows a line you can tap to open Android's "Alarms &amp; reminders" screen, where you can allow it. That is your choice and the app works without it. After the phone restarts, the app schedules your reminders again.</p>
+    <p><strong>Lock screen.</strong> A notification can contain the text of the heart it points to (the daily encouragement and important dates) or the text of a reminder you wrote. By default these notifications are marked <em>private</em>: while the phone is locked they show only a general line, "A reminder from Levavot" or "A heart is waiting in Levavot", without the text, and the full text appears after you unlock the phone. You can change this with "Hide content on the lock screen" in the app's Reminders screen. The app's own gentle suggestions use general wording and never contain the text of a heart. How a private notification looks on a locked phone also follows Android's own lock-screen notification settings, which you can change in Android settings.</p>
+    <h3>Floating bubble over other apps (SYSTEM_ALERT_WINDOW, FOREGROUND_SERVICE)</h3>
+    <p>If you turn it on yourself in the app's settings, the app first shows a short explanation of what the bubble does and which permission it needs, and you can cancel there. Then, if you allow "Display over other apps" in Android, a small floating heart appears over other apps. It dances when a heart is waiting, opens Levavot when you tap it, and a long press hides it. To keep it running, Android shows a quiet notification while it is on. The bubble is drawn from the app's own data; it does not read, record or send anything about the other apps or what is on your screen. You can turn it off in the app or in Android settings at any time.</p>
+    <h3>Home-screen widget</h3>
+    <p>The widget is a little heart that shows whether a heart is waiting. It does not show the text of your hearts.</p>
+    <h3 id="export-en">Export and restore (your own backup file)</h3>
+    <p>In the app's settings you can save the whole archive as one zip file ("Export the archive") and add hearts back from such a file ("Restore from a file").</p>
+    <ul>
+      <li><strong>Export.</strong> You choose where the file is saved in Android's system file picker (device storage, or any storage provider you have on your phone). The file contains your hearts and lists, your reminders, and your photos and voice recordings. <strong>It is not encrypted or password-protected</strong>, so anyone who has the file can read your hearts. Keep it as private as the hearts themselves.</li>
+      <li><strong>Restore.</strong> You choose a file in the same file picker. The app adds the hearts and lists that are missing, with their photos and recordings. It only adds: nothing already in the app is replaced or deleted. Reminders and settings are not restored from the file.</li>
+      <li><strong>Nothing goes to us.</strong> The export and the restore happen on your phone. The app has no internet permission and sends the file to no cloud of ours. If you pick a cloud storage provider in the file picker, the file goes to that provider by your choice and under its policy, not ours. The file you save is under your control; we cannot see it or delete it.</li>
+    </ul>
+
+    <h2 id="leave-en">When information leaves your device</h2>
+    <ul>
+      <li><strong>Voice hearts</strong>: only through your phone's speech service, when it has no on-device recognizer, as described above.</li>
+      <li><strong>Android device backup</strong>: the app allows Android's standard backup. If backup is turned on in your phone's settings, Android may copy the app's data to the backup in your own Google account, or to a new phone when you transfer. In Levavot this includes your hearts, photos, voice recordings, reminders and settings (such as your weekly check-in answers), both in the cloud backup and when you transfer to a new phone. On Android 9 and later this backup can be end-to-end encrypted with your screen lock. We cannot access it. You can turn backup off in Android settings, and you can delete the backup from your Google account.</li>
+      <li><strong>An export file you save</strong>: only where you choose, as described in <a href="#export-en">Export and restore</a>.</li>
+      <li><strong>Add to calendar</strong>: if you tap this button on a heart that has a date, the app opens your phone's calendar app with a new all-day event (the heart's text becomes the title). Nothing is saved until you save it there, and your calendar app and its account (for example Google Calendar) then handle it. Levavot has no calendar permission and does not read your calendar.</li>
+      <li>The app has no links, sharing buttons or network code of its own.</li>
+    </ul>
+
+    <h2>Planned: a relay server (not part of this version)</h2>
+    <p>A future version of Levavot is planned to carry hearts between you and your spouse through a server that only relays them: it is meant to pass each heart on and delete it once it has been delivered, without keeping a backup. That version would need internet access and a way to connect two phones. <strong>Nothing of this exists in the current version.</strong> If it is released, we will update this policy first, with the details, and publish it before the change takes effect.</p>
+    <h2>What we don't do</h2>
+    <ul>
+      <li>No ads, no analytics, no crash reporting, no advertising ID, no tracking.</li>
+      <li>No access to your location, contacts, camera, calendar or photo library.</li>
+      <li>No accounts, and no server that receives your data. We do not sell or share your data with anyone.</li>
+      <li>We do not read the content of your hearts.</li>
+    </ul>
+
+    <h2>How long data is kept</h2>
+    <ul>
+      <li><strong>On your device</strong>: until you delete it in the app, clear the app's storage or uninstall the app.</li>
+      <li><strong>With us</strong>: we receive no data, so there is nothing to keep. E-mails you send us are kept only as long as needed to answer you.</li>
+      <li><strong>In your Android backup</strong>: for as long as it exists in your Google account; see Google's settings.</li>
+      <li><strong>In an export file</strong>: for as long as you keep the file.</li>
+    </ul>
+
+    <h2 id="delete-en">How to delete your data</h2>
+    <ul>
+      <li><strong>A single heart</strong>: delete it from the archive (the app asks you to confirm). Its photos and voice recording are deleted with it.</li>
+      <li><strong>A reminder</strong>: delete it in Settings → Reminders.</li>
+      <li><strong>Everything on the phone</strong>: Android Settings → Apps → Levavot → Storage → <em>Clear storage</em>, or uninstall the app.</li>
+      <li><strong>Your Android backup</strong>: manage or delete it in your phone's backup settings or in your Google account.</li>
+      <li><strong>Export files you saved</strong>: delete them yourself where you saved them (we never see them).</li>
+      <li><strong>Weekly check-in answers</strong>: they are deleted with the rest of the app's data when you clear its storage or uninstall it.</li>
+      <li>Any question: <a href="mailto:annabiz.studio@gmail.com?subject=My%20Levavot%20data">annabiz.studio@gmail.com</a>. We answer within 30 days. Since we hold no copy of your data, we cannot delete it for you, but we will help you do it yourself.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live (for example under the GDPR in the EU/UK, the Israeli Privacy Protection Law or US state laws such as the CCPA), you may have rights over your personal information, such as access, correction, deletion, and objecting to or restricting its processing. Since your data stays only on your phone, you control it directly in the app. You can also complain to your local data-protection authority.</p>
+
+    <h2>Security</h2>
+    <p>Data on your device is kept in the app's private storage, which Android protects with its app sandbox. The app has no internet permission in this version. No method is 100% secure; we recommend a screen lock on your phone, because your hearts are personal. An export file is not encrypted (see <a href="#export-en">Export and restore</a>), so store it somewhere private.</p>
+
+    <h2>Children</h2>
+    <p>Levavot is for married couples aged <strong>18 and over</strong> and is <strong>not directed to children</strong>. We do not knowingly collect personal information from anyone under 18. We receive no personal information at all in this version.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, for example if we add a server, accounts, a paid plan or ads, we will publish the new version at this address with a new effective date before the change takes effect. If the changes are significant, we will also tell you in the app.</p>
+    <p class="muted">Last updated: October 9, 2026</p>
+<ul class="policy-history"><li><strong>October 9, 2026</strong>: V0.6: export/restore, weekly check-in (local), private lock-screen notifications, transcription wording</li><li><strong>October 8, 2026</strong>: First version (V0.5): everything stays on the phone, no server and no internet permission; voice hearts and transcription, including the phone's speech service; photos, notifications and reminders, the floating bubble; ages 18 and over.</li></ul>
+
+    <h2>Contact</h2>
+    <p>AnnaBiz · <strong><a href="mailto:annabiz.studio@gmail.com">annabiz.studio@gmail.com</a></strong></p>
+  </section>
+
+  <section id="he" dir="rtl" lang="he">
+    <h2>בקצרה</h2>
+    <ul>
+      <li><strong>הלבבות שלך נשארים בטלפון.</strong> ההודעות, התמונות, ההקלטות, התזכורות וההגדרות נשמרים רק באחסון הפרטי של האפליקציה במכשיר שלך. אנחנו (המפתחים) לא מקבלים אותם. אפשר גם לשמור עותק כקובץ בכל מקום שתבחרו (<a href="#export-he">ייצוא ושחזור</a>); הקובץ הזה בשליטתך ואנחנו לא רואים אותו.</li>
+      <li><strong>בגרסה הזו אין שרת ואין הרשאת אינטרנט,</strong> ולכן האפליקציה לא יכולה לשלוח לבבות, תמונות או הקלטות לשום מקום בעצמה. אין חשבון, אין פרסומות, אין כלי ניתוח, אין מעקב, ושום דבר לא משותף עם צדדים שלישיים.</li>
+      <li><strong>לבבות קוליים ושירות הדיבור של הטלפון.</strong> האפליקציה הופכת את ההקלטה לטקסט בעזרת זיהוי הדיבור של אנדרואיד. כשבטלפון יש מזהה דיבור שפועל בתוך המכשיר, האפליקציה משתמשת בו. כשאין, שירות הדיבור שמוגדר כברירת מחדל באנדרואיד מטפל בזה, וברוב הטלפונים זה השירות של Google, ש<strong>עשוי לעבד את השמע בשרתי Google</strong> לפי המדיניות של Google. ראו <a href="#voice-he">מיקרופון ותמלול</a>.</li>
+      <li><strong>הגיבוי של אנדרואיד.</strong> אם הגיבוי מופעל בהגדרות הטלפון, אנדרואיד עשוי להעתיק את נתוני האפליקציה (כולל הלבבות, התמונות וההקלטות) לחשבון Google שלך, ולהעביר אותם לטלפון חדש בעת מעבר. אין לנו גישה אליהם. ראו <a href="#leave-he">מתי מידע יוצא מהמכשיר</a>.</li>
+      <li><strong>לזוגות נשואים מגיל 18 ומעלה.</strong></li>
+    </ul>
+
+    <h2>מי אנחנו</h2>
+    <p>לבבות (Levavot) מפורסמת על ידי AnnaBiz ("אנחנו"). לכל שאלה על פרטיות כתבו אל <a href="mailto:annabiz.studio@gmail.com">annabiz.studio@gmail.com</a>. כרגע אין בלבבות פרסומות ואין רכישות. אם זה ישתנה, נעדכן את המדיניות קודם.</p>
+
+    <h2>מה נשמר במכשיר בלבד</h2>
+    <ul>
+      <li><strong>הלבבות שלך</strong>: הטקסט, סוג הלב, מדבקות, צבע, דוגמה וגופן, התאריך שסימנת, שם מקום שהקלדת (טקסט חופשי; האפליקציה לא משתמשת במיקום שלך), מתי הלב נוצר ומתי נפתח, באילו רשימות הוא נמצא, והקישור ללב שהוא משיב לו. הם נשמרים בקובץ באחסון הפרטי של האפליקציה.</li>
+      <li><strong>תמונות</strong>: עד 3 בכל לב, מוקטנות עד 1280 פיקסלים בצלע הארוכה, באחסון הפרטי של האפליקציה.</li>
+      <li><strong>הקלטות קוליות</strong>: קבצי שמע באורך של עד 60 שניות, באחסון הפרטי של האפליקציה.</li>
+      <li><strong>תזכורות, תאריך החופה והגדרות</strong>: התזכורות שיצרת נשמרות יחד עם הלבבות. תאריך החופה (רשות: רק אם בחרת להזין אותו, משמש רק לתזכורת ביום הנישואין, ונמחק כשמכבים אותו), בחירות תצוגה, הגדרות ההתראות והמועדים של ההצעות העדינות של האפליקציה נשמרים בהגדרות המקומיות של האפליקציה.</li>
+      <li><strong>בדיקה שבועית</strong>: בערך פעם בשבוע, אחרי השבוע הראשון של השימוש, האפליקציה שואלת שאלה אחת ("השבוע הרגשתי שמקשיבים לי ומכבדים אותי?"). עונים בנגיעה אחת (שלושה פרצופים) או מדלגים. התשובות, יחד עם מועד המענה, נשמרות <strong>רק בטלפון שלך</strong>, בהגדרות המקומיות של האפליקציה. האפליקציה לא שולחת אותן לשום מקום, ובן או בת הזוג לא רואים אותן. כמו שאר ההגדרות, הן חלק מהגיבוי של אנדרואיד אם הגיבוי מופעל (ראו <a href="#leave-he">בהמשך</a>).</li>
+      <li><strong>"האפליקציה לומדת אתכם"</strong>: השעה שבה אתם בדרך כלל שולחים לבבות מחושבת בטלפון שלך, ממועדי הלבבות האחרונים בלבד. האפליקציה לא קוראת ולא מנתחת מה כתוב בלבבות, ושום דבר מזה לא נשלח לשום מקום.</li>
+    </ul>
+    <p>כל זה נמחק כשמנקים את האחסון של האפליקציה או מסירים אותה. לבבות לא נמחקים אוטומטית; רק את/ה מוחק/ת אותם.</p>
+
+    <h2>תכונות וההרשאות שהן משתמשות בהן</h2>
+    <h3 id="voice-he">מיקרופון ותמלול: לבבות קוליים (RECORD_AUDIO)</h3>
+    <p>בפעם הראשונה שמקליטים לב קולי, האפליקציה מסבירה למה היא צריכה את המיקרופון ואז מבקשת הרשאה. היא משתמשת במיקרופון <strong>רק בזמן ההקלטה</strong> (עד 60 שניות). ההקלטה נשמרת כקובץ שמע באחסון הפרטי של האפליקציה ומצורפת ללב. ללבבות אין הרשאת אינטרנט והיא לא שולחת את ההקלטה לשום מקום בעצמה.</p>
+    <p><strong>התמלול הכתוב.</strong> באנדרואיד 13 ומעלה, בזמן ההקלטה, האפליקציה מבקשת גם מזיהוי הדיבור של אנדרואיד להפוך את המילים לטקסט, והן מופיעות בתוך הלב (אפשר לתקן אותן). התמלול נעשה <strong>בתוך הטלפון כשהטלפון יכול, ואחרת בשירות הדיבור של הטלפון</strong> (בדרך כלל של Google), כמתואר בהמשך. ההסבר הקצר שהאפליקציה מציגה לפני בקשת המיקרופון אומר את אותו דבר.</p>
+    <p><strong>אנדרואיד 12 ומטה.</strong> תמלול אוטומטי דורש אנדרואיד 13 ומעלה (ושירות זיהוי דיבור בטלפון). לפני ההקלטה האפליקציה מציגה הודעה שבטלפון הזה אין תמלול אוטומטי. ההקלטה עדיין נשמרת, ואת הטקסט כותבים ביד.</p>
+    <ul>
+      <li>כשבטלפון יש <strong>מזהה דיבור שפועל בתוך המכשיר</strong>, האפליקציה מבקשת אותו, ומבקשת גם זיהוי לא מקוון. השמע מעובד אז בטלפון.</li>
+      <li>כשבטלפון <strong>אין מזהה דיבור כזה</strong>, משתמשים בשירות זיהוי הדיבור שמוגדר כברירת מחדל באנדרואיד. ברוב הטלפונים זה שירות הדיבור של Google. השירות הזה עשוי <strong>לשלוח את השמע לשרתי הספק שלו לתמלול</strong>, לפי מדיניות הפרטיות של הספק, בדרך כלל <a href="https://policies.google.com/privacy?hl=iw">מדיניות הפרטיות של Google</a>, ולא לפי המדיניות הזו. אין לנו שליטה בכך, ואיננו מקבלים ממנו לא את השמע ולא את הטקסט.</li>
+      <li>הקלטת לב קולי היא רשות. מי שלא רוצה ששירות דיבור יעבד את הקול שלו, יכתוב את הלב במקום להקליט אותו.</li>
+    </ul>
+    <h3>תמונות</h3>
+    <p>בוחרים תמונות בבורר התמונות של המערכת באנדרואיד. לבבות מקבלת רק את התמונות שבחרת. אין לה גישה לשאר התמונות שלך והיא לא מבקשת הרשאת גלריה או מצלמה. כשמוחקים לב, התמונות וקובץ ההקלטה שלו נמחקים איתו.</p>
+    <h3>התראות ותזכורות (POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED)</h3>
+    <p>תזכורות שקבעת, העידוד היומי, תזכורות לתאריכים חשובים וההצעות העדינות של האפליקציה לשלוח לב מתוזמנות ומוצגות <strong>מקומית</strong> בטלפון שלך. הן לא הודעות משרת. כברירת מחדל האפליקציה שולחת לכל היותר 3 הצעות משלה בשבוע; אפשר לשנות את המספר או לכבות. תזמון מדויק (שעון מעורר מדויק) הוא רשות; בלעדיו התזכורות מגיעות תוך כמה דקות מהשעה שנבחרה. כשאנדרואיד לא מאפשר לאפליקציה שעון מעורר מדויק (כברירת מחדל זה המצב באנדרואיד 14 ומעלה), במסך התזכורות מופיעה שורה שאפשר ללחוץ עליה כדי לפתוח את המסך "התראות ותזכורות" של אנדרואיד ולאשר שם. זו בחירה שלך, והאפליקציה עובדת גם בלעדיה. אחרי הפעלה מחדש של הטלפון האפליקציה קובעת את התזכורות מחדש.</p>
+    <p><strong>מסך הנעילה.</strong> התראה יכולה להכיל את הטקסט של הלב שהיא מפנה אליו (העידוד היומי ותאריכים חשובים) או את הטקסט של תזכורת שכתבת. כברירת מחדל ההתראות האלה מסומנות כ<em>פרטיות</em>: כשהטלפון נעול הן מציגות רק שורה כללית, "תזכורת מלבבות" או "לב מחכה לך בלבבות", בלי הטקסט, והטקסט המלא מופיע אחרי שמשחררים את הנעילה. אפשר לשנות זאת באמצעות "הסתרת תוכן במסך הנעילה" במסך התזכורות של האפליקציה. ההצעות העדינות של האפליקציה כתובות בניסוח כללי ולעולם לא מכילות את הטקסט של לב. איך התראה פרטית נראית בטלפון נעול תלוי גם בהגדרות ההתראות של אנדרואיד למסך הנעילה, שאפשר לשנות בהגדרות אנדרואיד.</p>
+    <h3>בועה צפה מעל אפליקציות אחרות (SYSTEM_ALERT_WINDOW, FOREGROUND_SERVICE)</h3>
+    <p>אם הפעלת אותה בעצמך בהגדרות האפליקציה, האפליקציה מציגה קודם הסבר קצר על מה שהבועה עושה ועל ההרשאה שהיא צריכה, ואפשר לבטל שם. אחר כך, אם אישרת באנדרואיד "הצגה מעל אפליקציות אחרות", לב קטן צף מעל אפליקציות אחרות. הוא רוקד כשמחכה לב, פותח את לבבות בנגיעה, ולחיצה ארוכה מסתירה אותו. כדי שיישאר פועל, אנדרואיד מציג התראה שקטה כל עוד הוא פועל. הבועה מצוירת מהנתונים של האפליקציה עצמה; היא לא קוראת, לא מקליטה ולא שולחת דבר על האפליקציות האחרות או על מה שמוצג במסך. אפשר לכבות אותה בכל עת באפליקציה או בהגדרות אנדרואיד.</p>
+    <h3>ווידג'ט במסך הבית</h3>
+    <p>הווידג'ט הוא לב קטן שמראה אם מחכה לב. הוא לא מציג את הטקסט של הלבבות.</p>
+    <h3 id="export-he">ייצוא ושחזור (קובץ גיבוי משלך)</h3>
+    <p>בהגדרות האפליקציה אפשר לשמור את כל הארכיון כקובץ zip אחד ("ייצוא הארכיון") ולהוסיף חזרה לבבות מקובץ כזה ("שחזור מקובץ").</p>
+    <ul>
+      <li><strong>ייצוא.</strong> את מקום השמירה בוחרים בבורר הקבצים של מערכת אנדרואיד (אחסון המכשיר, או כל ספק אחסון שיש בטלפון). הקובץ מכיל את הלבבות והרשימות, את התזכורות, ואת התמונות וההקלטות הקוליות. <strong>הוא לא מוצפן ואין עליו סיסמה</strong>, ולכן מי שיש לו את הקובץ יכול לקרוא את הלבבות. שמרו עליו פרטי כמו הלבבות עצמם.</li>
+      <li><strong>שחזור.</strong> בוחרים קובץ באותו בורר קבצים. האפליקציה מוסיפה את הלבבות והרשימות שחסרים, יחד עם התמונות וההקלטות שלהם. היא רק מוסיפה: שום דבר שכבר באפליקציה לא מוחלף ולא נמחק. תזכורות והגדרות לא משוחזרות מהקובץ.</li>
+      <li><strong>שום דבר לא נשלח אלינו.</strong> הייצוא והשחזור מתבצעים בטלפון שלך. לאפליקציה אין הרשאת אינטרנט והיא לא שולחת את הקובץ לשום ענן שלנו. אם תבחרו בבורר הקבצים ספק אחסון בענן, הקובץ יגיע אליו בבחירתכם ולפי המדיניות שלו, לא שלנו. הקובץ ששמרתם בשליטתכם; איננו יכולים לראות אותו או למחוק אותו.</li>
+    </ul>
+
+    <h2 id="leave-he">מתי מידע יוצא מהמכשיר</h2>
+    <ul>
+      <li><strong>לבבות קוליים</strong>: רק דרך שירות הדיבור של הטלפון, כשאין בו מזהה דיבור שפועל בתוך המכשיר, כמתואר למעלה.</li>
+      <li><strong>גיבוי המכשיר של אנדרואיד</strong>: האפליקציה מאפשרת את הגיבוי הרגיל של אנדרואיד. אם הגיבוי מופעל בהגדרות הטלפון, אנדרואיד עשוי להעתיק את נתוני האפליקציה לגיבוי בחשבון Google שלך, או לטלפון חדש בעת מעבר. באפליקציה זה כולל לבבות, תמונות, הקלטות, תזכורות והגדרות (כמו תשובות הבדיקה השבועית), גם בגיבוי לענן וגם במעבר לטלפון חדש. באנדרואיד 9 ומעלה הגיבוי הזה יכול להיות מוצפן מקצה לקצה בעזרת נעילת המסך שלך. אין לנו גישה אליו. אפשר לכבות את הגיבוי בהגדרות אנדרואיד, ואפשר למחוק את הגיבוי מחשבון Google שלך.</li>
+      <li><strong>קובץ ייצוא ששמרתם</strong>: רק למקום שבחרתם, כמתואר ב<a href="#export-he">ייצוא ושחזור</a>.</li>
+      <li><strong>הוספה ליומן</strong>: אם תלחצו על הכפתור הזה בלב שיש לו תאריך, האפליקציה פותחת את אפליקציית היומן של הטלפון עם אירוע חדש לכל היום (הטקסט של הלב הופך לכותרת). שום דבר לא נשמר עד שתשמרו אותו שם, ואז אפליקציית היומן והחשבון שלה (למשל Google Calendar) מטפלים בו. ללבבות אין הרשאת יומן והיא לא קוראת את היומן שלך.</li>
+      <li>באפליקציה אין קישורים, כפתורי שיתוף או קוד רשת משלה.</li>
+    </ul>
+
+    <h2>בתכנון: שרת מעביר (לא חלק מהגרסה הזו)</h2>
+    <p>בגרסה עתידית של לבבות מתוכנן להעביר לבבות ביניכם לבין בן או בת הזוג דרך שרת שרק מעביר אותם: הוא אמור להעביר כל לב הלאה ולמחוק אותו אחרי שהגיע, בלי לשמור גיבוי. גרסה כזו תצטרך גישה לאינטרנט ודרך לחבר בין שני טלפונים. <strong>שום דבר מזה לא קיים בגרסה הנוכחית.</strong> אם היא תצא, נעדכן קודם את המדיניות הזו עם כל הפרטים, ונפרסם אותה לפני שהשינוי ייכנס לתוקף.</p>
+
+    <h2>מה אנחנו לא עושים</h2>
+    <ul>
+      <li>אין פרסומות, אין אנליטיקה, אין דיווח קריסות, אין מזהה פרסום ואין מעקב.</li>
+      <li>אין גישה למיקום, לאנשי קשר, למצלמה, ליומן או לגלריה.</li>
+      <li>אין חשבונות, ואין שרת שמקבל את המידע שלך. איננו מוכרים ואיננו משתפים את המידע שלך עם אף אחד.</li>
+      <li>אנחנו לא קוראים את התוכן של הלבבות שלך.</li>
+    </ul>
+
+    <h2>כמה זמן נשמר המידע</h2>
+    <ul>
+      <li><strong>במכשיר</strong>: עד שמוחקים אותו באפליקציה, מנקים את האחסון של האפליקציה או מסירים אותה.</li>
+      <li><strong>אצלנו</strong>: איננו מקבלים מידע, ולכן אין מה לשמור. מיילים שנשלחים אלינו נשמרים רק כל עוד צריך כדי לענות.</li>
+      <li><strong>בגיבוי של אנדרואיד</strong>: כל עוד הוא קיים בחשבון Google שלך; ראו את ההגדרות של Google.</li>
+      <li><strong>בקובץ ייצוא</strong>: כל עוד אתם שומרים את הקובץ.</li>
+    </ul>
+
+    <h2 id="delete-he">איך מוחקים את המידע</h2>
+    <ul>
+      <li><strong>לב אחד</strong>: מוחקים אותו מהארכיון (האפליקציה מבקשת אישור). התמונות וההקלטה שלו נמחקות איתו.</li>
+      <li><strong>תזכורת</strong>: מוחקים אותה בהגדרות ← תזכורות.</li>
+      <li><strong>הכול בטלפון</strong>: הגדרות אנדרואיד ← אפליקציות ← לבבות ← אחסון ← <em>ניקוי אחסון</em>, או הסרת האפליקציה.</li>
+      <li><strong>הגיבוי של אנדרואיד</strong>: מנהלים או מוחקים אותו בהגדרות הגיבוי של הטלפון או בחשבון Google.</li>
+      <li><strong>קבצי ייצוא ששמרתם</strong>: מוחקים אותם בעצמכם במקום ששמרתם (אנחנו לא רואים אותם).</li>
+      <li><strong>תשובות הבדיקה השבועית</strong>: הן נמחקות יחד עם שאר נתוני האפליקציה כשמנקים את האחסון שלה או מסירים אותה.</li>
+      <li>לכל שאלה: <a href="mailto:annabiz.studio@gmail.com?subject=My%20Levavot%20data">annabiz.studio@gmail.com</a>. נענה תוך 30 יום. מאחר שאין לנו עותק של המידע שלך, איננו יכולים למחוק אותו בשבילך, אבל נעזור לך לעשות זאת בעצמך.</li>
+    </ul>
+
+    <h2>הזכויות שלך</h2>
+    <p>לפי הדין במקום מגוריך (למשל ה-GDPR באיחוד האירופי ובבריטניה, חוק הגנת הפרטיות בישראל או חוקי מדינות בארה"ב כמו ה-CCPA), ייתכן שיש לך זכויות לגבי המידע האישי שלך, כמו עיון, תיקון, מחיקה והתנגדות לעיבוד או הגבלתו. מאחר שהמידע נשאר רק בטלפון, את/ה שולט/ת בו ישירות באפליקציה. אפשר גם להגיש תלונה לרשות להגנת המידע במקום מגוריך.</p>
+
+    <h2>אבטחה</h2>
+    <p>המידע במכשיר נשמר באחסון הפרטי של האפליקציה, שאנדרואיד מגן עליו בארגז החול של האפליקציות. בגרסה הזו אין לאפליקציה הרשאת אינטרנט. אין שיטה מאובטחת ב-100%; אנחנו ממליצים להגדיר נעילת מסך בטלפון, כי הלבבות שלך אישיים. קובץ ייצוא אינו מוצפן (ראו <a href="#export-he">ייצוא ושחזור</a>), ולכן שמרו אותו במקום פרטי.</p>
+
+    <h2>ילדים</h2>
+    <p>לבבות מיועדת לזוגות נשואים מגיל <strong>18 ומעלה</strong> ו<strong>אינה מכוונת לילדים</strong>. איננו אוספים ביודעין מידע אישי ממי שמתחת לגיל 18. בגרסה הזו איננו מקבלים שום מידע אישי.</p>
+
+    <h2>שינויים במדיניות</h2>
+    <p>אם המדיניות תשתנה, למשל אם נוסיף שרת, חשבונות, מסלול בתשלום או פרסומות, הגרסה החדשה תפורסם בכתובת זו עם תאריך תחילה חדש, לפני שהשינוי ייכנס לתוקף. על שינוי משמעותי נודיע גם באפליקציה.</p>
+    <p class="muted">עודכן לאחרונה: 9 באוקטובר 2026</p>
+<ul class="policy-history"><li><strong>9 באוקטובר 2026</strong>: V0.6: ייצוא ושחזור, בדיקה שבועית (מקומית), התראות פרטיות במסך הנעילה, ניסוח התמלול</li><li><strong>8 באוקטובר 2026</strong>: גרסה ראשונה (V0.5): הכול נשאר בטלפון, בלי שרת ובלי הרשאת אינטרנט; לבבות קוליים ותמלול, כולל שירות הדיבור של הטלפון; תמונות, התראות ותזכורות, הבועה הצפה; גיל 18 ומעלה.</li></ul>
+
+    <h2>יצירת קשר</h2>
+    <p>AnnaBiz · <strong><a href="mailto:annabiz.studio@gmail.com">annabiz.studio@gmail.com</a></strong></p>
+    <p class="muted">תאריך תחילה: 8 באוקטובר 2026. עודכן לאחרונה: 9 באוקטובר 2026. חל על גרסה 0.6 ואילך. במקרה של סתירה בין הנוסחים, הנוסח האנגלי קובע.</p>
+  </section>
+</main>
+</body>
+</html>

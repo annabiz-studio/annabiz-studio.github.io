@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the family · Planner</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg:#0f2a3a; --card:#163a4f; --ink:#eaf6ff; --sub:#a9c7d8; --acc:#5ec8f2; }
+  @media (prefers-color-scheme: light) { :root { --bg:#eef7fc; --card:#ffffff; --ink:#123042; --sub:#4d6b7c; --acc:#1f8fd0; } }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; background:var(--bg); color:var(--ink);
+         font:17px/1.6 "Segoe UI", Roboto, Arial, sans-serif; padding:16px; }
+  main { max-width:420px; width:100%; background:var(--card); border-radius:22px; padding:26px 22px; text-align:center; }
+  .bubble { width:96px; height:96px; margin:0 auto 10px; border-radius:50%; display:grid; place-items:center; font-size:44px;
+            background:radial-gradient(circle at 35% 30%, #fff9, var(--acc) 70%); }
+  h1 { font-size:22px; margin:6px 0; }
+  p { color:var(--sub); margin:8px 0; }
+  .btn { display:block; margin:18px auto 8px; padding:14px 18px; border-radius:999px; background:var(--acc); color:#06222f;
+         font-weight:700; text-decoration:none; font-size:18px; }
+  .code { font-size:28px; letter-spacing:2px; color:var(--acc); direction:ltr; unicode-bidi:isolate; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bubble">👪</div>
+  <h1 id="title"></h1>
+  <p id="lead"></p>
+  <a id="open" class="btn" href="#"></a>
+  <!-- V1.48: no Planner on this phone yet: get it from Google Play (com.planner.app), then the code below -->
+  <a id="play" class="btn" style="display:none" href="https://play.google.com/store/apps/details?id=com.planner.app"></a>
+  <p id="manual"></p>
+  <p class="code" id="code"></p>
+</main>
+<script>
+  // Planner family invite: opens the app on joining this family (planner://join); without the app, the code to type in.
+  var q = new URLSearchParams(location.search);
+  var code = (q.get("c") || "").replace(/\D/g, "").slice(0, 6);
+  var name = (q.get("n") || "").slice(0, 80);
+  var he = /^(he|iw)/i.test(navigator.language || "");
+  var T = he ? {
+    title: "הזמנה למשפחה \u201C" + name + "\u201D", lead: "בפלנר: כותבים את השם שלך ושולחים בקשה, ומנהל המשפחה מאשר.",
+    open: "פתיחה בפלנר", play: "להוריד את הפלנר מ-Google Play", manual: "אפשר גם בפלנר: הפלנר המשפחתי ← הצטרפות עם שם המשפחה \u201C" + name + "\u201D והקוד:"
+  } : {
+    title: "Invitation to the family \u201C" + name + "\u201D", lead: "In Planner: write your name and send the request; the family's admin approves.",
+    open: "Open in Planner", play: "Get Planner on Google Play", manual: "Or in Planner: Family planner \u2192 join with the family name \u201C" + name + "\u201D and the code:"
+  };
+  if (he) { document.documentElement.lang = "he"; document.documentElement.dir = "rtl"; }
+  document.getElementById("title").textContent = T.title;
+  document.getElementById("lead").textContent = T.lead;
+  document.getElementById("manual").textContent = T.manual;
+  document.getElementById("code").textContent = code;
+  var deep = "join?c=" + encodeURIComponent(code) + "&n=" + encodeURIComponent(name);
+  var a = document.getElementById("open");
+  a.textContent = T.open;
+  // Android Chrome opens the app straight from an intent:// link (and, without the app, stays on this page)
+  a.href = /android/i.test(navigator.userAgent)
+    ? "intent://" + deep + "#Intent;scheme=planner;package=com.planner.app;S.browser_fallback_url=" + encodeURIComponent(location.href.split("#")[0] + "#noapp") + ";end"
+    : "planner://" + deep;
+  var play = document.getElementById("play");
+  play.textContent = T.play;
+  // came back without the app (Android sends #noapp), or not a phone that opens it: show the way to Google Play
+  if (location.hash === "#noapp" || !/android/i.test(navigator.userAgent)) { play.style.display = "block"; }
+  if (!code || !name) { a.style.display = "none"; }
+  else if (location.hash !== "#noapp" && /android/i.test(navigator.userAgent)) { setTimeout(function () { location.href = a.href; }, 300); }
+</script>
+</body>
+</html>
